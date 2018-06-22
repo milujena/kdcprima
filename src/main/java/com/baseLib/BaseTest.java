@@ -12,11 +12,10 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
-import com.genericLib.FreeCRMTest;
 import com.genericLib.TestUtils;
 
 
-public class BaseTest extends FreeCRMTest {
+public class BaseTest  {
 	public static WebDriver driver;
 	public static Properties prop;
 	Logger log = Logger.getLogger(BaseTest.class);
