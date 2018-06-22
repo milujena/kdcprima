@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.testLib.LogInTest">
+      <class name="com.testLib.LogInpageTitleTest">
         <methods>
-          <include name="loginTest"/>
+          <include name="loginPageTitleTest"/>
           <include name="precondition"/>
           <include name="postconditon"/>
         </methods>
-      </class> <!-- com.testLib.LogInTest -->
+      </class> <!-- com.testLib.LogInpageTitleTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

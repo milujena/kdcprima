@@ -16,6 +16,7 @@ public class LogInTest extends BaseTest {
 
 	String loginPageTitle="Free CRM software in the cloud powers sales and customer service";
 	String HomePageTitle="CRMPRO";
+	LogInPage lp=new LogInPage(driver);
 	@Test
 	public void loginTest() 
 	{
@@ -24,19 +25,19 @@ public class LogInTest extends BaseTest {
 
 		ExtentReport e=new ExtentReport();
 		
-		e.extentTest.log(LogStatus.PASS, "on start of reading");
+		     //e.extentTest.log(LogStatus.PASS, "on start of reading");
 		
 
-		//r.extentTest.log(LogStatus.SKIP, "Test Case SKIPPED IS " + result.getName());
-	LogInPage lp=new LogInPage(driver);
-    lp.verifyTitle(loginPageTitle);
-	lp.user_name("milu123");
-	lp.pass_word("milu123");
-	lp.login_btn();
-	lp.verifyTitle(HomePageTitle);
-	e.extentTest.log(LogStatus.PASS, "done");
-	log.info("****************************** ending test case *****************************************");
-	log.info("****************************** freeCrmTitleTest *****************************************");
+		
+	
+           lp.verifyTitle(loginPageTitle);
+	       lp.user_name("milu123");
+	       lp.pass_word("milu123");
+	       lp.login_btn();
+	       lp.verifyTitle(HomePageTitle);
+	       // e.extentTest.log(LogStatus.PASS, "done");
+	        log.info("****************************** ending test case *****************************************");
+	        log.info("****************************** freeCrmTitleTest *****************************************");
 
 	
 	}

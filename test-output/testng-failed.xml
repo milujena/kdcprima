@@ -8,9 +8,7 @@
     <classes>
       <class name="com.testLib.LogInTest">
         <methods>
-          <include name="setExtent"/>
           <include name="loginTest"/>
-          <include name="endReport"/>
           <include name="precondition"/>
           <include name="postconditon"/>
         </methods>
