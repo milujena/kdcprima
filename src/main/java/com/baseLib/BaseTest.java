@@ -18,7 +18,7 @@ import com.genericLib.TestUtils;
 public class BaseTest  {
 	public static WebDriver driver;
 	public static Properties prop;
-	Logger log = Logger.getLogger(BaseTest.class);
+	//Logger log = Logger.getLogger(BaseTest.class);
 	
 
 	
@@ -26,11 +26,11 @@ public class BaseTest  {
 	@BeforeTest
 	public void precondition() throws IOException
 	{
-		log.info("****************************** Starting test cases execution  *****************************************");
+		//log.info("****************************** Starting test cases execution  *****************************************");
 
 	
 		Properties prop=new Properties();
-	FileInputStream ip=new FileInputStream("D:\\Project Management\\com.qa.kdcprima.test\\src\\main\\java\\com\\configurationFileLib\\config.properties");
+	FileInputStream ip=new FileInputStream("D:\\Project Management\\mykdcprima\\kdcprima\\src\\main\\java\\com\\configurationFileLib\\config.properties");
 	prop.load(ip);
 		
 		
@@ -53,7 +53,7 @@ public class BaseTest  {
 		driver.manage().timeouts().pageLoadTimeout(TestUtils.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(TestUtils.IMPLICITY_WAIT, TimeUnit.SECONDS);
 		driver.get(prop.getProperty("url"));
-		log.info("entering application URL");
+		//log.info("entering application URL");
 		
 	}
 	@AfterTest
@@ -61,7 +61,7 @@ public class BaseTest  {
 	{
 		
 		driver.close();
-		log.info("****************************** Browser is closed *****************************************");
+		//log.info("****************************** Browser is closed *****************************************");
 
 	
 
